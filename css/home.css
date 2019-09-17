@@ -12,28 +12,31 @@ body{
     margin-top:-3px;
     
 }
-.header-serach{
-    width:95%;
-    position: relative; 
-    border:2px solid blue;
-}
-.header-search>i{
-    position: absolute;
-    left:-100;
-    font-size: 18px;
-}
 
 .default-color{
     margin-top:-15px;
 }
 
+.header-serach{
+    width:95%;
+    position: relative; 
+}
 .header-serach>input{
     background:#302f2f;
     border:0px;
     border-radius: 0px;
     display: block;
     width:95% !important;
-    margin-left: 10px; 
+    margin-left: 10px;
+    padding-left: 30px; 
+}
+.header-serach>i{
+    display:block;
+    cursor:pointer;
+    position: absolute;
+    left:15px;
+    color:gray;
+    font-size: 18px;
 }
 
 .nav-item>a>img{
@@ -52,15 +55,52 @@ body{
     left:10px;
     font-size: 12px;
 }
-
+.mes{
+    position: relative;
+}
+.mes-dot{
+    position: absolute;
+    width:3px;
+    height:3px;
+    border-radius: 50%;
+    left:22px;
+    top:39px;
+    background:#000;
+}
+.mes-dot1{
+    position: absolute;
+    width:3px;
+    height:3px;
+    border-radius: 50%;
+    left:27px;
+    top:39px;
+    background:#000;
+}
+.mes-dot2{
+    position: absolute;
+    width:3px;
+    height:3px;
+    border-radius: 50%;
+    left:32px;
+    top:39px;
+    background:#000;
+}
 a.nav-link{
     padding-top:1.8em;
 }
+.navbar-toggler{
+    border:0px;
+}
+
 
 /* header for some resopnsive issues */
 @media (max-width:900px){
     .default-color{
         margin-top:0px;
+    }
+    .header-serach{
+        margin-left:-10px;
+        width:100%;
     }
     .badge-danger{
         border-radius: 50%;
@@ -71,11 +111,65 @@ a.nav-link{
         font-size: 12px;
     }
     a.nav-link{
-        padding-top:0em;
+        padding-top:1em;
     }
     .icons>a>i{
         font-size: 22px;
         margin-left: 0px;
         padding-top:0px;
+    }
+}
+
+/* main section */
+.mainsection{
+    padding:0em 5em;
+}
+.card{
+    border:0px;
+    background:none;
+    border-radius: 10px;
+}
+.card>img{
+    width:100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* specific column shown in specific devices */
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 62em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 75em) {
+    .card-columns {
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+    }
+}
+/* specific column shown end here */
+
+@media (max-width:1024px){
+    .mainsection{
+        padding:0em 2em;
     }
 }
