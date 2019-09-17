@@ -91,7 +91,124 @@ a.nav-link{
 .navbar-toggler{
     border:0px;
 }
+.fa-comment-alt, .fa-bell, .fa-ellipsis-h{
+    cursor:pointer;
+}
+.dropdown-default{
+    background:#212121;
+    border:1px solid gray;
+    width:300px;
+    
+}
 
+.dropdown-default>a{
+        margin: 0px;            
+        color:white;
+}
+.dropdown-default>a:hover{
+        background:none;        
+        color:white;
+}
+.heading{
+    border-bottom: 1px solid gray;
+    color:white;
+    padding-top: 10px;
+    padding-bottom:10px;
+    text-align:center; 
+    position: relative;   
+}
+.heading>a{
+    position: absolute;
+    text-align: right;
+    color:silver;
+    right: 20px;
+}
+.profiles{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+.profiles>img{
+    width:60px;
+    padding: 1px;
+
+}
+.profiles>b{
+    color:white;
+    font-size: 14px;
+}
+.noti{
+    color:white;
+    padding-left: 5px;
+    padding-top:5px;
+    padding-bottom: 15px;
+}
+.newnoti{
+    margin-left: 10px;
+}
+.newnoti>b{
+    display: block;
+    color:gray !important;
+    margin-bottom: 10px;
+}
+.notiperson>p>img{
+    width:50px;
+    display: block;
+    float: left;
+}
+.notiperson>p{
+    color:white;
+    font-size:13px;
+    float: right; 
+}
+.notiimages{
+    display: flex;
+    margin:2px; 
+    position: relative;
+}
+.notiimages>img{
+    width:30px;
+    height:60px;
+    position: absolute;
+    top:40px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+.notiimages>.img1{
+    width:30px;
+    height:60px;
+    position: absolute;
+    top:40px;
+    margin-left: 83px;
+    border-radius: 5px;
+}
+.notiimages>.img2{
+    width:30px;
+    height:60px;
+    position: absolute;
+    top:40px;
+    margin-left: 116px;
+    border-radius: 5px;
+}
+.notiimages>.img3{
+    width:30px;
+    height:60px;
+    position: absolute;
+    top:40px;
+    margin-left: 149px;
+    border-radius: 5px;
+}
+#moreone>a{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+#moreone>a:nth-child(6){
+    border-bottom: none;
+}
 
 /* header for some resopnsive issues */
 @media (max-width:900px){
@@ -123,17 +240,94 @@ a.nav-link{
 /* main section */
 .mainsection{
     padding:0em 5em;
+
 }
 .card{
     border:0px;
     background:none;
     border-radius: 10px;
+    position: relative;
+    margin:1em 0em;
 }
-.card>img{
+.card>a>img{
     width:100%;
     height: auto;
     border-radius: 10px;
 }
+.savebutton{
+    position: absolute;
+    border-radius: 5px;
+    background:#ca0808;
+    right:10px;
+    top:10px;
+    padding:0.3em 1.2em;
+    color:white;
+    border:none;
+    opacity: 0;
+}
+@media (max-width:1024px){
+    .savebutton{
+        opacity:1;
+    }
+}
+.fa-upload{
+    position: absolute;
+    border-radius: 50%;
+    width:35px;
+    height:35px;
+    background:gray;
+    right:10px;
+    bottom:95px;
+    padding:0.4em 0em .1em .6em;
+    color:white;
+}
+.card:hover .savebutton{
+    
+        opacity: 1;
+        transition: opacity 1.5s;
+
+}
+.text-below{
+    margin-top:0.8em;
+    padding:0px 0px 0px 5px;
+}
+.below-text>h3{
+    color:#fff;
+    font-size: 13px;
+    margin-bottom: -0.3em;
+
+}
+.below-text>a{
+    color:gray;
+    font-size: 11px;
+}
+.profile{
+    display: flex;
+}
+.profile>a>img{
+    width:40px;
+    height:37px;
+    margin-top: 5px;
+}
+.profile>a{
+    color:#fff;
+    font-size: 12px;
+}
+@media (max-width: 1024px){
+.profile>a{
+    color:#fff;
+    font-size: 14px;
+}
+}
+@media (max-width: 700px){
+    .text-below{
+    margin-top:0.8em;
+    padding:0px 0px 0px 1px;
+}
+}
+
+
+
 /* specific column shown in specific devices */
 @media (min-width: 34em) {
     .card-columns {
@@ -173,3 +367,150 @@ a.nav-link{
         padding:0em 2em;
     }
 }
+
+/*footer*/
+footer{
+    margin-top: 2em;
+}
+footer>ul{
+    display: flex;
+    justify-content: center;
+}
+ul>li{
+    text-decoration-style: none !important;
+    list-style: none;
+}
+footer>ul>li>a{
+    text-decoration: none;
+    color:white;
+    padding:0.8em;
+    padding-left: 0em;
+    font-weight:none;
+    font-size: 14px;
+}
+footer>ul>li>a:hover{
+    text-decoration: none;
+    color:#ca0808;
+
+}
+/*bottom right fixed button*/
+.button_up>.pin{
+    position: fixed;
+    z-index:  1;
+    right:10px;
+    bottom:70px;
+    font-size: 30px;
+    background:#ca0808;
+    border:0px;
+    color:#fff;
+    padding:.13em .6em;
+    border-radius: 50%;
+    cursor:pointer !important;
+}
+.button_do>.pin{
+    position: fixed;
+    z-index: 1;
+    right:15px;
+    bottom:10px;
+    font-size: 30px;
+    background:#fff;
+    border:0px;
+    color:#000;
+    padding:.0002em .5em;
+    border-radius: 50%;
+    cursor:pointer !important;
+}
+.createpin_c{
+    position: fixed;
+    z-index: 1;
+    right:8px;
+    bottom: 135px;
+    background:#212121;
+    border-radius: 5px;
+    border:1px solid gray;
+    display: none;
+}
+.createpin_c>ul{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    padding:0px;
+}
+.createpin_c>ul>li{
+    text-decoration-style: none;
+    list-style:none;
+    padding-right: 0px;
+    border-bottom: 1px solid gray;
+    padding:0.8em;
+}
+.createpin_c>ul>li:nth-child(2){
+    border-bottom: none;
+}
+.createpin_c>ul>li>a{
+
+    color:white;
+    font-size: 16px;
+}
+
+.createpin_d{
+    position: fixed;
+    z-index: 1;
+    right:8px;
+    bottom: 75px;
+    background:#212121;
+    border-radius: 5px;
+    border:1px solid gray;
+    display: none;
+
+}
+.createpin_d>ul{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    padding:0px;
+}
+.createpin_d>ul>li{
+    text-decoration-style: none;
+    list-style:none;
+    padding-right: 0px;
+    border-bottom: 1px solid gray;
+    padding:0.8em;
+}
+.createpin_d>ul>li:nth-child(2){
+    border-bottom: none;
+}
+.createpin_d>ul>li>a{
+
+    color:white;
+    font-size: 16px;
+}
+/*following page*/
+.followingpage{
+    margin-bottom: 30px;
+}
+.followingpage>h1{
+    font-size: 23px;
+}
+
+.findpeople{
+    text-align: center;
+}
+.findpeople>button{
+    padding:.6em 1em;
+    border-radius: 5px;
+    background:#ca0808;
+    border:none;
+    color:white;
+    margin-top: 20px;
+
+}
+.followtopimages{
+    display: flex;
+    margin-bottom: 30px;
+}
+.followtopimages>img{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/*following page end*/
