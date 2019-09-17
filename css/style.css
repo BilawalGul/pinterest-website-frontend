@@ -159,7 +159,7 @@ footer{
 .all-top-form{
     background-color:#212121;
     padding: 2em 6em;
-    margin-top: 2.5em;
+    margin: 2.5em 3em 0em 3em;
     padding-top: 2em;
     padding-bottom: 2em;
     height:90vh;
@@ -271,4 +271,26 @@ footer{
 .under-form>*{
     color:gray;
     font-size: 12px;
+}
+
+/* sign up  business account*/
+@media (min-width:1030px){
+    .business_account{
+        padding: 0.7em 0em;
+        margin:-3em 3em 0em 3em;
+        background:white;
+    }
+}
+@media (max-width:1030px){
+    .business_account{
+        padding: 0.7em 0em;
+        margin:-3em 0em 0em 0em;
+        background:white;
+    }
+}
+
+.business_account>a{
+    color:#000;
+    font-size: 14px;
+    font-weight: bold;
 }

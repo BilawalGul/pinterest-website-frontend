@@ -8,109 +8,85 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- font awsome icons -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <title>Insta Home</title>
 </head>
 <body class="body">
     
-    <div class="fixed-container">
+    <section>
+        <header>
+            <div class="container-fluid">
+                <!--Navbar -->
+                <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
 
-        <div class="container">
-            <div class="row ">
-                <div class="card-columns">
+                        <form class="form-inline my-2 my-lg-0 header-serach">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </form>
 
-                    <div class="card">
-                            <img src="https://images.unsplash.com/photo-1562887009-7924341c5cbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show images" >
-                    </div>
-                    <div class="card">
-                            <img src="https://images.unsplash.com/photo-1568537907982-d249ec7a57cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show images" >
-                    </div>
-                    <div class="card">
-                            <img src="https://images.unsplash.com/photo-1568567863502-e365d001123c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show images" >
-                    </div>
-                    <div class="card">
-                            <img src="https://images.unsplash.com/flagged/photo-1568210386949-63a970860700?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show images" >
-                    </div>
-                    <div class="card">
-                            <img src="https://images.unsplash.com/flagged/photo-1568411541840-44ddbff9df59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show images" >
-                    </div>
-                    <div class="card">
-                            <img src="https://images.unsplash.com/photo-1568515438700-2473a005b1a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show images" >
-                    </div>
-                    <div class="card">
-                            <img src="https://images.unsplash.com/photo-1568581789190-ae90a7da930b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" alt="show images" >
-                    </div>
-                    <div class="card">
-                            <img src="https://images.unsplash.com/photo-1568516474847-4090022e9a75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show images" >
-                    </div>
-                    <div class="card">
-                            <img src="https://images.unsplash.com/photo-1568235174352-d8d854c94b9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show images" >
-                    </div>
-                    <div class="card">
-                            <img src="https://images.unsplash.com/photo-1567947121292-bc4813a67133?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show images" >
-                    </div>
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1568530134868-5d89f49d5a72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show image">
-                    </div>
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1566658426752-2c131ea62eaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="show image">
-                    </div>
+                        <ul class="navbar-nav ml-auto nav-flex-icons">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Following</a>
+                            </li>
+                            <li class="nav-item thisitem">
+                                <a class="nav-link" href="#"> 
+                                    <img src="images/user.png" alt="user-image"/>
+                                   
+                                </a>
+                            </li>
+                            <li class="nav-item icons dropdown">
+                                <a class="nav-link" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-comment-alt"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                                aria-labelledby="navbarDropdownMenuLink-333">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item icons">
+                                <a class="nav-link" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-bell"><span class="badge badge-danger">2</span></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                                aria-labelledby="navbarDropdownMenuLink-333">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
 
-                </div><!--card column end here-->           
-            </div><!-- row end here -->
-        </div> <!-- container end here -->
-
-    </div><!-- fixed container end here-->
-
-    <!-- login form here -->
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3">
-                <div class="all-top-form">
-                    <img src="images/logo.png" alt="logo">
-                    <h2>Welcome to Brand</h2>
-                    <p>Find new idea to try</p>
-
-                    <form action="" method="">
-                        <input type="text" placeholder="Enter Your Email"class="form-control" required>
-                        <input type="text" placeholder="Password" class="form-control" required>
-                        <button type="submit" class="login_button">Log in</button>
-                        <p class="or">OR</p>
-                    </form>
-
-                    <button class="facebook"> <img src="images/icons/facebook.png" alt="facebook icon"> Continue with facebook</button>
-                    <button class="google"> <img src="images/icons/google.png" alt="google icon"> Continue with Google</button>
-                    
-                    <div class="under-form">
-                        <p>By continuintg, you agree to Brand's <a href="#">Term of Sevrices, </a><a href="#">Privacy Policy</a></p>
-
-                        <a href="#">Forget Your Password</a>
-
-                        <p>Not on Brand yet? <a href="#">Sing up</a> </p>
+                            </li>
+                            <li class="nav-item icons">
+                                <a class="nav-link" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                                aria-labelledby="navbarDropdownMenuLink-333">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </nav>
+                <!--/.Navbar -->
             </div>
-        </div>
-    </div>
-    <!-- login form End here -->
-
-
-    <footer class="d-none d-md-block">
-
-            <ul>
-                <li><a href="#">About Brand</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Businesses</a></li>
-                <li><a href="#">Term of Services</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Phone App</a></li>
-                <li><a href="#">Android App</a></li>
-                <li><a href="#">Users</a></li>
-                <li><a href="#">Collections</a></li>
-            </ul>
-
-    </footer>
+        </header>
+    </section>
+    
 
 
 
